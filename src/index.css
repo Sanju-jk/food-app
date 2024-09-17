@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(201, 201, 201) !important;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.carousel-item img {
+  object-fit: contain !important;
+  filter: brightness(40%);
+
+}
+
+#carousel{
+  max-height: 500px;
+}
