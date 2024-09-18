@@ -19,6 +19,7 @@ app.use(cors({
 app.use(express.json())
 app.use('/api', require("./routes/user"));
 app.use('/api', require("./routes/displaydata"));
+app.use('/api', require("./routes/orderdata"));
 
 
 //creating server at PORT

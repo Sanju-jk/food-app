@@ -58,7 +58,7 @@ export default function Card(props) {
 
                     <div className="container w-100">
                         <select
-                            className="m-2 h-100 bg-success rounded"
+                            className="m-2 h-100  rounded"
                             onChange={e => setSize(e.target.value)}
                             value={size}
                             ref={priceRef}
@@ -71,7 +71,7 @@ export default function Card(props) {
                         </select>
 
                         <select
-                            className="m-2 h-100 bg-success rounded"
+                            className="m-2 h-100  rounded"
                             onChange={e => setQuantity(e.target.value)}
                             value={quantity}
                         >

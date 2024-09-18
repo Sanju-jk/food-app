@@ -33,6 +33,10 @@ const reducer = (state = [], action) => {
                 return food;
             });
 
+        case "DROP":
+            let emptyArray = []
+            return emptyArray
+
         default:
             console.log("Error in Reducer");
             return state; // Ensure state is returned in the default case
