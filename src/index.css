@@ -22,3 +22,38 @@ code {
 #carousel{
   max-height: 500px;
 }
+
+
+
+
+/* my order */
+/* MyOrder.css */
+.order-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.order-date {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.order-item {
+  background-color: #f9f9f9;
+}
+
+.order-item-img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.order-item-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-total {
+  font-size: 1.25rem;
+  font-weight: bold;
+}

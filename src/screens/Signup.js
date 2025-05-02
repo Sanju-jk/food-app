@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
 
 export default function Signup() {
   let [credentials, setCredentials] = useState({ name: "", email: "", password: "", geolocation: "" });
+  let navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents default form submission
@@ -26,6 +27,10 @@ export default function Signup() {
 
     if (!data.success) {
       alert("Enter Valid Credentials");
+    }
+    else {
+      alert("Signed up successfully! Please log in.");
+      navigate("/Login")
     }
   };
 

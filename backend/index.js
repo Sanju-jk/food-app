@@ -17,6 +17,7 @@ app.use(cors({
 
 //middleware to handle routes
 app.use(express.json())
+
 app.use('/api', require("./routes/user"));
 app.use('/api', require("./routes/displaydata"));
 app.use('/api', require("./routes/orderdata"));

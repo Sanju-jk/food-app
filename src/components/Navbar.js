@@ -22,7 +22,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm " >
             <div className="container-fluid">
                 <Link className="navbar-brand text-light fs-3 fw-bold" to="/">
-                    <FontAwesomeIcon icon={faMortarPestle} className="me-2 text-warning" /> Foodify
+                    <FontAwesomeIcon icon={faMortarPestle} className="me-2 text-warning" /> GoFood
                 </Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@ export default function Navbar() {
 
                         {localStorage.getItem("authToken") && (
                             <li className="nav-item">
-                                <Link className="nav-link text-light fs-5" to="/">My Orders</Link>
+                                <Link className="nav-link text-light fs-5" to="/myorder">My Orders</Link>
                             </li>
                         )}
                     </ul>

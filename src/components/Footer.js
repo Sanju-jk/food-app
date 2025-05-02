@@ -8,7 +8,7 @@ export default function Footer() {
         <Link to="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
           {/* Replace this with the actual SVG code or a proper SVG component */}
         </Link>
-        <span className="mb-3 mb-md-0 text-body-secondary">© 2024 Foodify, Inc</span>
+        <span className="mb-3 mb-md-0 text-center text-body-secondary">© 2024 Foodify, Inc</span>
       </div>
 
       <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">

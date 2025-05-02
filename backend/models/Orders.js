@@ -8,8 +8,11 @@ const orderSchema = new Schema({
         unique: true
     },
     order_data: {
-        type: Array, // Use an array of mixed types
+        type: [{ type: Schema.Types.Mixed }],
         required: true
+    },
+    price: {
+        type: Number
     }
 });
 

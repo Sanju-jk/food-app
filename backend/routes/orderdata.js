@@ -3,7 +3,7 @@ const router = express.Router();
 const Order = require('../models/Orders'); // Ensure this path is correct
 
 router.post('/orderdata', async (req, res) => {
-    const { order_data, email, order_date } = req.body;
+    const { order_data, email, order_date, price } = req.body;
 
     // Add order_date to the beginning of the order_data array
     order_data.unshift({ Order_date: order_date });
@@ -37,5 +37,15 @@ router.post('/orderdata', async (req, res) => {
         res.status(500).send(error.message);
     }
 });
+
+router.post('/myorder', async (req, res) => {
+    try {
+        let orders = await Order.findOne({ 'email': req.body.email });
+        res.json({ orders: orders })
+    } catch (error) {
+        res.status(500).send(error.message);
+    }
+})
+
 
 module.exports = router;
