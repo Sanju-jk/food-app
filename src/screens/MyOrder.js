@@ -9,7 +9,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/myorder", {
+            const response = await fetch("https://foodify-cxvh.onrender.com/api/myorder", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

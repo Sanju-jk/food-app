@@ -10,7 +10,7 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents default form submission
 
-    const URL = "http://localhost:5000/api/loginuser";
+    const URL = "https://foodify-cxvh.onrender.com/api/loginuser";
     const postData = {
       headers: { 'Content-Type': 'application/json' },
       method: "POST",

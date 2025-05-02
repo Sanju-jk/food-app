@@ -14,7 +14,7 @@ export default function Cart() {
     const totalPrice = data.reduce((total, food) => total + food.price, 0);
 
     const handleCheckOut = async () => {
-        const URL = "http://localhost:5000/api/orderdata";
+        const URL = "https://foodify-cxvh.onrender.com/api/orderdata";
         const userEmail = localStorage.getItem("userEmail");
 
         try {

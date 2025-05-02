@@ -9,7 +9,7 @@ export default function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents default form submission
 
-    const URL = "http://localhost:5000/api/createuser";
+    const URL = "https://foodify-cxvh.onrender.com/api/createuser";
     const postData = {
       headers: { 'Content-Type': 'application/json' },
       method: "POST",
