@@ -9,7 +9,7 @@ connectDB();
 
 //middleware to handle cors
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust this based on your frontend URL
+  origin: 'https://foodify-beta-six.vercel.app', // Adjust this based on your frontend URL
   methods: 'GET, POST, PUT, DELETE',
   allowedHeaders: 'Content-Type, Authorization',
 }));
